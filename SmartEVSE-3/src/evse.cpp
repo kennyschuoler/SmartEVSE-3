@@ -2889,6 +2889,10 @@ void StartwebServer(void) {
         doc["settings"]["solar_max_import"] = ImportCurrent;
         doc["settings"]["solar_start_current"] = StartCurrent;
         doc["settings"]["solar_stop_time"] = StopTime;
+        doc["settings"]["meter_mains"] = MAINS_METER;
+        doc["settings"]["meter_pv"] = PV_METER;
+        doc["settings"]["meter_ev"] = EV_METER;
+
         
         doc["home_battery"]["current"] = homeBatteryCurrent;
         doc["home_battery"]["last_update"] = homeBatteryLastUpdate;
