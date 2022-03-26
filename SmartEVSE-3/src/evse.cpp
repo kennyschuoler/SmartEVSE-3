@@ -2976,6 +2976,13 @@ void StartwebServer(void) {
                     doc["override_current"] = "Value not allowed!";
                 }
             }
+            if(request->hasParam("force_override")) {
+                String force_override = request->getParam("force_override")->value();
+                if(force_override.equalsIgnoreCase("true")) {
+                    SetCurrent(OverrideCurrent);
+                    doc["force_override_current"] = OverrideCurrent;
+                }
+            }
         }
 
         String json;
