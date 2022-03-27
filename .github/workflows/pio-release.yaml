@@ -14,9 +14,9 @@ jobs:
       - name: Download artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-           github_token: ${{secrets.GITHUB_TOKEN}}
-    	   workflow: pio-build.yml
-  	   path: extract_here
+          github_token: ${{secrets.GITHUB_TOKEN}}
+    	  workflow: pio-build.yml
+  	  path: extract_here
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build project # This would actually build your project, using zip for an example artifact
