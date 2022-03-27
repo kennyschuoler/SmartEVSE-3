@@ -1,4 +1,4 @@
-on:
+on: #test
   push:
     tags:
       - 'v*'
